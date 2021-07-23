@@ -58,8 +58,8 @@ https://bri.jdcloud-api.com/v1/creditScore:check
 | **riskTag**     | String | 风险类型，对应riskCode的中文描述                             |
 | **riskCode**    | String | 风险类型编码，对应riskCode的分类：<br/>200-208手机综合风险，包括200-黑手机、201-异常注册、202-异常登录、203-营销刷券、204-下单黄牛、205-异常支付、206-恶意售后、207-猫池小号、208-订单风险、998-未知<br>501-507IP综合风险，包括501-普通代理、 502-秒拨代理IP、503-真人作弊、504-设备伪装、505-地址伪装、506-黑软IP、507-爬虫IP、998-未知<br>详见[标签说明](https://docs.jdcloud.com/cn/risk-detection/core-concepts) |
 | **riskClass**   | String | 风险分类，包括ip、phone、addr                                |
-| **score**       | String | 风险评分，1-低风险 2-中低风险 3-中风险 4-中高风险 5-高风险 0-无风险 |
-| **scoreDesc**   | String | 对应score的中文描述，1-低风险 2-中低风险 3-中风险 4-中高风险 5-高风险 0-无风险 |
+| **score**       | String | 风险评分，1-低风险 2-中低风险 3-中风险 4-中高风险 5-高风险 0-无风险 -999未识别 |
+| **scoreDesc**   | String | 对应score的中文描述，1-低风险 2-中低风险 3-中风险 4-中高风险 5-高风险 0-无风险 -999未识别 |
 | **attribution** | String | 手机号码归属地，只有resourceType为phone时且归属地不为空时提供字段值，如：黑龙江-伊春市 |
 
 ## 返回码
